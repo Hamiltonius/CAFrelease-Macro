@@ -1,7 +1,7 @@
-# CAFrelease Macro for SAP Export Formatting
+# Contract Communication Macro for Standard SAP Export Formatting and Consistency
 
 ## Overview
-**CAFrelease** is a simple yet powerful VBA macro that optimizes SAP export formatting for **CAF release processing**. By automating key formatting tasks, it reduces manual effort and ensures standardized output.
+**Contract-Comm-Macro** is a simple yet powerful VBA macro that optimizes SAP export formatting for **CAF release processing**. By automating key formatting tasks, it reduces manual effort and ensures standardized output.
 
 This macro helps:
 - **Format headers and columns consistently**
@@ -22,12 +22,14 @@ This macro helps:
    - Go to **File > Import File...**
    - Select `CAFrelease.vba` and click **Open**.
 4. Close the editor and return to Excel.
-5. Run the macro using `Ctrl + K` or via **Developer > Macros > CAFrelease**.
+5. Run the macro using `Ctrl + K` or via **Developer > Macros > Contract-Comm-Macro**.
 
 ## Code
 ```vba
-Sub CAFrelease()
-    ' Standardizes SAP export formatting for CAF release
+Sub ContractComm()
+
+    ' Standardizes SAP export formatting for Contract Communication Processing
+
     ' Keyboard Shortcut: Ctrl+K
 
     ' Set header formatting
@@ -57,6 +59,7 @@ Sub CAFrelease()
 
     ' Enable filtering for data management
     Range("A1").CurrentRegion.AutoFilter Field:=1
+
 End Sub
 ```
 
