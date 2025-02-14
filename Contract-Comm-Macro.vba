@@ -24,7 +24,9 @@ Sub ContractComm()
     Columns("L").ColumnWidth = 11
 
     ' Auto-fit specific columns for optimal display
-    Columns("E,H:J,M").EntireColumn.AutoFit
+    Columns("E").AutoFit
+    Columns("H:J").AutoFit
+    Columns("M").AutoFit
 
     ' Set consistent row height for data rows
     Rows("2:500").RowHeight = 21
