@@ -1,7 +1,7 @@
 # Contract Communication Macro for Standard SAP Export Formatting and Consistency
 
 ## Overview
-**Contract-Comm-Macro** is a simple yet powerful VBA macro that optimizes SAP export formatting for **CAF release processing**. By automating key formatting tasks, it reduces manual effort and ensures standardized output.
+**Contract-Comm-Macro** is a simple yet powerful VBA macro that optimizes SAP export formatting for **auditable contract communication and processing**. By automating key formatting tasks, it reduces manual effort and ensures standardized output.
 
 This macro helps:
 - **Format headers and columns consistently**
@@ -18,18 +18,16 @@ This macro helps:
 ## Installation & Usage
 1. Open your Excel workbook.
 2. Open the **Visual Basic Editor** (`Alt + F11`).
-3. Import the `CAFrelease.vba` file:
-   - Go to **File > Import File...**
-   - Select `CAFrelease.vba` and click **Open**.
+3. Import the `Contract-Comm-Macro.vba` file:
+   - In the VBA Editor, go to **File > Import File...**
+   - Select `Contract-Comm-Macro.vba` and click **Open**.
 4. Close the editor and return to Excel.
-5. Run the macro using `Ctrl + K` or via **Developer > Macros > Contract-Comm-Macro**.
+5. Run the macro using `Ctrl + K` or via **Developer > Macros > ContractComm**.
 
 ## Code
 ```vba
 Sub ContractComm()
-
     ' Standardizes SAP export formatting for Contract Communication Processing
-
     ' Keyboard Shortcut: Ctrl+K
 
     ' Set header formatting
@@ -59,12 +57,17 @@ Sub ContractComm()
 
     ' Enable filtering for data management
     Range("A1").CurrentRegion.AutoFilter Field:=1
-
 End Sub
-```
 
-## Contributing
-If you’d like to improve this macro or add additional functionality, feel free to fork the repository and submit a pull request.
+Contributing
 
-## License
+Contributions are welcome! If you’d like to improve the macro or add additional functionality:
+	1.	Fork the repository
+	2.	Create a feature branch (git checkout -b new-feature)
+	3.	Commit your changes (git commit -m "Added new feature")
+	4.	Push to the branch (git push origin new-feature)
+	5.	Submit a pull request
+
+License
+
 This project is released under the MIT License – feel free to use, modify, and distribute it.
